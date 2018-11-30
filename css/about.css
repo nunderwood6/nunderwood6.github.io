@@ -1,0 +1,23 @@
+div.about {
+	margin-top: 25px;
+}
+
+div.about.row {
+	align-items: flex-start;
+}
+
+div.portrait {
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+img.img-responsive {
+	image-orientation: from-image;
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+}

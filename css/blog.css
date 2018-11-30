@@ -1,0 +1,48 @@
+p {
+	font-size: 18px;
+	margin: 15px auto;
+}
+
+img {
+	box-shadow: #aaa 0px 2px 3px;
+	margin: 25px 0px;
+}
+
+div.main {
+	margin: 35px auto;
+}
+
+.center {
+	text-align: center;
+}
+
+div.photos img {
+	width: 45%;
+	height: auto;
+}
+
+h5 {
+	font-size: 24px;
+	margin: 25px auto;
+}
+
+li {
+	font-size: 18px;
+	margin-top: 15px;
+}
+img.full {
+	width: 95%;
+	height: auto;
+}
+
+img.no_shadow {
+	box-shadow: none;
+}
+
+a.underline {
+	text-decoration: underline;
+}
+
+p.small {
+	font-size: 16px;
+}

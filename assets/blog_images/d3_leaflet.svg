@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 200" style="enable-background:new 0 0 600 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:12px;}
+	.st4{font-size:18px;}
+</style>
+<g>
+	<rect x="46.5" y="73.5" class="st0" width="504" height="8"/>
+	<path d="M550,74v7H47v-7H550 M551,73H46v9h505V73L551,73z"/>
+</g>
+<g>
+	<circle class="st0" cx="46" cy="78" r="10.5"/>
+	<path d="M46,68c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S40.5,68,46,68 M46,67c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11
+		s11-4.9,11-11C57,71.9,52.1,67,46,67L46,67z"/>
+</g>
+<g>
+	<circle class="st0" cx="551" cy="78" r="10.5"/>
+	<path d="M551,68c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S545.5,68,551,68 M551,67c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11
+		s11-4.9,11-11C562,71.9,557.1,67,551,67L551,67z"/>
+</g>
+<rect x="8" y="92.7" class="st1" width="110" height="65.3"/>
+<text transform="matrix(1 0 0 1 8.0483 101.2188)"><tspan x="0" y="0" class="st2 st3">-Easy to learn</tspan><tspan x="0" y="14.4" class="st2 st3">-Quick “out of the </tspan><tspan x="0" y="28.8" class="st2 st3">box” solutions</tspan><tspan x="0" y="43.2" class="st2 st3">-Tough to customize</tspan></text>
+<rect x="23" y="30.7" class="st1" width="53.6" height="20.3"/>
+<text transform="matrix(1 0 0 1 23.0483 43.4785)" class="st2 st4">Leaflet</text>
+<rect x="540" y="29.7" class="st1" width="22" height="22.3"/>
+<text transform="matrix(1 0 0 1 540.0488 42.4785)" class="st2 st4">D3</text>
+<rect x="489" y="92.7" class="st1" width="112" height="68.3"/>
+<text transform="matrix(1 0 0 1 489 101.2188)"><tspan x="0" y="0" class="st2 st3">-Steep learning curve</tspan><tspan x="0" y="14.4" class="st2 st3">-Extremely flexible, </tspan><tspan x="0" y="28.8" class="st2 st3">able to generate any </tspan><tspan x="0" y="43.2" class="st2 st3">shape imaginable and </tspan><tspan x="0" y="57.6" class="st2 st3">bind to data</tspan></text>
+</svg>

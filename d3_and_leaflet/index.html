@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Nick Underwood Cartography</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link rel="stylesheet" href="../css/bootstrap-grid.min.css"/>
+		<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/blog.css">
+		
+	</head>
+	<body>
+
+<div class="container-fluid">
+
+	<div class="row top">
+
+		<div class="logo col-md-6 col-xs-12 text-center">
+		<h1><a href="../index.html">Nick Underwood</a></h1>
+		<p>Cartography - Data Journalism - Design
+		</p>
+		</div>
+
+		<div class="navbar col-md-4 offset-md-2">
+		<a href="../index.html">PORTFOLIO</a>
+		<a href="index.html">ABOUT</a>
+		<a href="../cv/index.html">CV</a>
+		</div>	
+
+	</div>
+
+	<div class="main">
+
+	<h2 class="center">D3 and Leaflet, BFF's?</h2>
+	<h4 class="center">Cartography Lab Education Series(CLES) 9/17/18</h4>
+
+	<div class="photos">
+		<img src="../assets/blog_images/leonardo.jpg">
+		<img src="../assets/blog_images/dinosaur.jpg">
+	</div>
+
+	<h5 class="center">The modern cartographer has a simple choice: renaissance (wo)man or dinosaur?</h5>
+
+	</div>
+
+	<p>Though this talk focuses on D3 and Leaflet, combining multiple tools effectively is essential to all modern cartographic workflows. Key takeaways: </p>
+
+	<ul>
+	<li>Because there are many tools available, with overlapping functions, there are many ways to make the same map</li>
+	<li>Tools(D3, Leaflet, ArcGIS, Illustrator) have an optimal range of functionality</li>
+	<li>Use what you already know, survey what's already been done(Google, Stack Overflow, blockbuilder.org) </li>
+	<li>Choose tools with good documentation, tutorials, community </li>
+	</ul>
+
+	<div class="photos">
+		<img src="../assets/blog_images/block_builder.png">
+		<img src="../assets/blog_images/leaflet_doc.png">
+	</div>
+
+	<h5>The challenge:</h5>
+	<p>Interactive map with slippy map functionality(pan&zoom), plus custom data-driven symbols to represent multivariate, temporal point data: <a class="underline" href="https://nunderwood6.github.io/FCVS_clone/#">Flyover Country Visualization Suite</a></p>
+
+
+	<h5>The characters:</h5>
+
+	<p><b>Leaflet:</b> Javascript library for web mapping, make slippy maps(pan and zoom), serve basemap tiles very easily:</p>
+
+	<img class="full" src="../assets/blog_images/leaflet_basic.png">
+
+	<p><b>D3:</b> Javascript library for web mapping, draw shapes with SVG in browser, "bind" data to shape attributes:</p>
+
+	<img class="full" src="../assets/blog_images/d3_magic.png">
+	<img class="full" src="../assets/blog_images/d3_choropleth.png">
+
+	<p>D3 and Leaflet are both Javascript mapping libraries, so how are they different?</p>
+
+	<img class="full no_shadow" src="../assets/blog_images/d3_leaflet.svg">
+
+	<div class="photos">
+		<img src="../assets/blog_images/cake_mix.jpg">
+		<img src="../assets/blog_images/scratch_cake.jpg">
+	</div>
+
+	<h5>Back to the challenge: which tools should I use?</h5>
+
+	<h5>Both Leaflet and D3 were perfect for pieces of the puzzle I was trying to solve, but not the whole puzzle. </h5>
+
+
+	<ul>
+	<li>Leaflet is perfect for slippy map functionality and  symbol repositioning, but not built to incorporate custom SVG symbols. <br>
+	 <a class="underline" href="https://leafletjs.com/examples/custom-icons/"> Leaflet icons </a>
+	</li>
+	<li>D3 is a dreamboat for drawing custom SVG based on data, but more of a challenge to implement pan/zoom/tile service/symbol repositioning(might be possible?) <br>
+		<a class="underline" href="https://bl.ocks.org/mbostock/c1c0426d50ca8a9f4c97"> D3 pan&zoom </a>
+	</li>
+	</ul>
+
+	<h5>Solution: Use Both!</h5>
+
+	<p class="small"> *Googling and documentation reading ensue*</p>
+
+	<p>Nothing quite fits the ticket... 
+		<br>
+		<br>
+		<a class="underline" href="https://bost.ocks.org/mike/leaflet/"> Bostock Leaflet+D3 </a>
+		<br>
+		<a class="underline" href="https://bl.ocks.org/d3noob/9267535"> D3 Noob </a>
+		</p>
+
+		<h5> Until... </h5>
+
+		<img class="full" src="../assets/blog_images/div_icon.png">
+
+		<h5>DivIcon, the diamond in the rough, the secret sauce!</h5>
+
+		<img class="full" src="../assets/blog_images/div_icon2.png">
+
+		<h5>Seems underwhelming, why am I so excited? </h5>
+
+		<img class="full" src="../assets/blog_images/d3_intro.png">
+
+		<h5>Since "div" exists in DOM, we can target with D3: </h5>
+
+		<img class="full" src="../assets/blog_images/workflow.png">
+
+		<h5>This workflow can be used to draw any kind of data-driven SVG symbol, and Leaflet will handle positioning!</h5>
+
+		<p>The final product: 
+			<br>
+			<a class="underline" href="https://nunderwood6.github.io/FCVS_clone/#">Flyover Country Visualization Suite</a>
+			<br>
+			And also used here:
+			<br>
+			<a class="underline" href="https://nunderwood6.github.io/wsa_project/#">Wilder than the National Parks</a>
+
+		</p>
+
+		<h5>Positives:</h5>
+
+		<ul>
+		<li>Uses both Leaflet and D3 in their optimal range of functionality("party zone")</li>
+		<li>Solution uses only native D3 and Leaflet functions, eliminating bulky Leaflet plugins</li>
+		<li>Was concerned about loading speed drawing hundreds of complex SVG shapes, but works smoothly!</li>
+		<li>Incorporated preexisting knowledge</li>
+		<li>Can now share with community!</li>
+
+		</ul>
+
+		<h5>Jealous dinosaur:</h5>
+		<img class="full" src="../assets/blog_images/dinosaur.jpg">
+
+
+
+
+	
+
+</div>
+		<script src="../lib/popper.min.js"></script>
+		<script src="../lib/bootstrap.min.js"></script>
+	 	<script src="../lib/jquery-3.3.1.min.js"></script>
+	</body>
+	</html>
