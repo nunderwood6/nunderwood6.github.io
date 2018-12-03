@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     },
     offset: {
       x: 0,
-      y: 0
+      y: 60
     },
     addHeight: true,
   }, document.body, window);
