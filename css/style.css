@@ -135,7 +135,7 @@ div.portfolio-grid span {
 }
 
 
-div.popup#pop{
+.popup{
  pointer-events: none;
  opacity: 0;
  background-color: rgba(0,0,0,.7);
@@ -192,4 +192,12 @@ margin-bottom: 12.5px;
     color: white;
 }
 
+.hiddenClass {
+  transition: opacity 0.5s ease;
+  opacity: 0.0;
+}
 
+.visibleClass {
+  transition: opacity 0.5s ease;
+  opacity: 1.0;
+}
