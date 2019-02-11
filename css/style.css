@@ -67,6 +67,7 @@ div.navbar  {
 	align-items: flex-start;
 	max-width: 230px;
 	font-size: 12px;
+	text-transform: uppercase;
 }
 
 div.navbar a.selected {
