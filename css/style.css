@@ -91,6 +91,10 @@ div.portfolio-grid.row {
 	align-items: stretch;
 }
 
+div.top.row {
+	align-items: stretch;
+}
+
 div.portfolio-grid a {
 	position: relative;
 	width: 450px;
