@@ -21,3 +21,11 @@ div.project_desc{
 .project_desc a {
 	text-decoration: underline;
 }
+
+.project_desc h5 {
+	margin-bottom: 1rem;
+}
+
+.project_desc p {
+	margin-bottom: 0.5rem;
+}
