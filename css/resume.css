@@ -1,5 +1,7 @@
 div.resume{
 	margin-top: 25px;
+	max-width: 850px;
+	margin-left: 0;
 }
 
 h3{
