@@ -1,5 +1,5 @@
 div.about {
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 div.about.row {
@@ -10,18 +10,33 @@ div.portrait {
 	margin-bottom: 10px;
 }
 
+div.description p {
+	font-size: 18px;
+}
+
 h4 {
 	font-size: 24px;
-	text-decoration: underline;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 span.bold{
 	font-weight: bold;
 }
 
-img.img-responsive {
-	image-orientation: from-image;
-	max-width: 500px;
-	width: 100%;
+
+div.about-grid {
+  	width: 100%;
+}
+
+div.about-grid img {
+	width: 49%;
 	height: auto;
+}
+
+@media screen and (max-width: 500px) {
+
+	div.about-grid img {
+		width: 100%;
+	}
 }

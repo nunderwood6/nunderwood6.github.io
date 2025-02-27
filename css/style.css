@@ -6,6 +6,7 @@ body {
 a {
 	color: #000;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 a:hover {
@@ -24,7 +25,8 @@ div{
 
 div.row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 div.container-fluid {
@@ -34,22 +36,32 @@ div.container-fluid {
 
 
 div.logo {
-	flex: 1;
+	flex: 1000;
+	min-width: 315px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 518px) {
+	div.logo {
+		text-align: center;
+	}
 }
 
 div.logo p {
 	display: block;
-	font-size: 12px;
+	font-size: 16px;
 	color: #555;
+	margin-top: 0;
 	margin-bottom: 0px
 }
 
 
 div.logo h1 {
-	font-size: 24px;
+	font-size: 36px;
 	white-space: nowrap;
 	display: block;
 	margin-bottom: 0;
+	margin-top: 0;
 	font-weight: bold;
 }
 
@@ -58,16 +70,32 @@ div.top {
 	border-bottom: #ccc solid 1px;
 	background-size: 100%;
 	opacity: .75;
+	padding-bottom: 3px;
+
 }
 
 
 div.navbar  {
-	padding-top: 5px;
+	display: flex;
 	list-style: none;
-	align-items: flex-start;
-	max-width: 230px;
-	font-size: 12px;
+	align-items: center;
+	font-size: 16px;
 	text-transform: uppercase;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	flex-grow: 1;
+	justify-content: center;
+	justify-self: center;
+}
+
+div.navbar a:first-child {
+	padding-right: 10px;
+	border-right: 1px solid #777;
+}
+
+div.navbar a:last-child {
+	padding-left: 10px;
 }
 
 div.navbar a.selected {
@@ -85,6 +113,22 @@ div.navbar a.selected {
     }
 }
 
+div.portfolio-grid {
+	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media screen and (min-width: 1006px) {
+    div.portfolio-grid {
+    	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+}
+
+@media screen and (min-width: 1250px) {
+    div.portfolio-grid {
+    	grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+	}
+}
 
 div.portfolio-grid.row {
 	margin-top: 12.5px;
@@ -92,27 +136,22 @@ div.portfolio-grid.row {
 }
 
 div.top.row {
-	align-items: stretch;
+	flex-wrap: wrap;
 }
 
 div.portfolio-grid a {
 	position: relative;
-	width: 450px;
-	padding: 0.5%;
+	padding: 5px;
+	aspect-ratio: 1;
 }
+
 
 @media screen and (max-width: 575px) {
     div.portfolio-grid a {
-	margin: 0 auto;
-	height: 325px;
-}
+		margin: 0 auto;
+	}
 }
 
-@media screen and (max-width: 770px) {
-    div.portfolio-grid a {
-	margin: 0 auto;
-}
-}
 
 div.portfolio-grid h6 {
 	font-size: .88rem;
@@ -140,18 +179,19 @@ div.portfolio-grid span {
 
 
 .popup{
- pointer-events: none;
- opacity: 0;
- background-color: rgba(0,0,0,.8);
- position: absolute;
- bottom: 1%;
- left: 1.5%;
- width: 97%;
+	 text-align: center;
+	 pointer-events: none;
+	 opacity: 0;
+	 background-color: rgba(0,0,0,.7);
+	 position: absolute;
+	 bottom: 1%;
+	 left: 1.5%;
+	 width: 97%;
 }
 
 div.popup#pop p{
-	font-size: 12px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: normal;
 	width: 100%;
 	height: auto;
 	color: white;
@@ -159,9 +199,9 @@ div.popup#pop p{
 	overflow: auto;
 }
 
-div.popup#pop p:first-of-type{
+/*div.popup#pop p:first-of-type{
 	border-bottom: #fff solid 1px;
-}
+}*/
 
 div.footer {
 width: auto;
@@ -210,4 +250,5 @@ div.attribution{
 	margin: 0 auto;
 	text-align: center;
 	opacity: .5;
+	margin-bottom: 15px;
 }
