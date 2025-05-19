@@ -29,9 +29,3 @@ div.project_desc{
 .project_desc p {
 	margin-bottom: 0.5rem;
 }
-
-div.embed-wrapper {
-	width: 100%;
-/*	max-width: 800px;*/
-	margin: 0 auto;
-}
