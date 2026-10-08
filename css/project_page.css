@@ -1,5 +1,7 @@
 div.project_desc{
-	margin-top: 25px;
+	margin: 25px auto;
+	max-width: 750px;
+
 }
 
 .project_photo{
@@ -7,11 +9,13 @@ div.project_desc{
 	max-width: 1000px;
 	height: auto;
 	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .desc_text{
-	max-width: 850px;
-	margin: 0;
+	margin: 0 auto;
 }
 
 .tools{
@@ -23,6 +27,7 @@ div.project_desc{
 }
 
 .project_desc h5 {
+	font-size: 24px;
 	margin-bottom: 1rem;
 }
 
